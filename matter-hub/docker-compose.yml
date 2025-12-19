@@ -4,7 +4,8 @@ services:
   app:
     image: ghcr.io/t0bst4r/home-assistant-matter-hub:latest
     restart: unless-stopped
-    network_mode: host
+    ports:
+      - "8482:8482"
     volumes:
       - ${APP_DATA_DIR}:/data
     environment:
