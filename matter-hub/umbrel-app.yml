@@ -2,9 +2,9 @@ manifestVersion: 1
 
 id: staerk-matter-hub
 name: Home Assistant Matter Hub
-tagline: Bridge Home Assistant entities to Matter
+tagline: Expose Home Assistant entities via Matter
 category: Home Automation
-version: "0.0.1"
+version: "0.1.0"
 port: 8482
 
 description: >
