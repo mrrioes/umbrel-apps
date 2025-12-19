@@ -1,13 +1,24 @@
 version: "3.7"
 
 services:
-  app:
+  matter-hub:
     image: ghcr.io/t0bst4r/home-assistant-matter-hub:latest
+    container_name: staerk_matter_hub
     restart: unless-stopped
-    ports:
-      - "8482:8482"
+
+    # ⚠️ Host-Netzwerk notwendig für mDNS/Discovery!
+    network_mode: "host"
+
     volumes:
       - ${APP_DATA_DIR}:/data
+
     environment:
+      # Log-Level: debug/info
       HAMH_LOG_LEVEL: info
+
+      # HTTP Port in Matter Hub
       HAMH_HTTP_PORT: 8482
+
+      # Diese beiden musst du später ersetzen:
+      HAMH_HOME_ASSISTANT_URL: http://192.168.178.XXX:8123
+      HAMH_HOME_ASSISTANT_ACCESS_TOKEN: "LONG_LIVED_ACCESS_TOKEN"
