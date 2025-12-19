@@ -1,6 +1,6 @@
 manifestVersion: 1
 
-id: staerkrepo-matter-hub
+id: staerk-matter-hub
 name: Home Assistant Matter Hub
 tagline: Bridge Home Assistant entities to Matter
 category: Home Automation
