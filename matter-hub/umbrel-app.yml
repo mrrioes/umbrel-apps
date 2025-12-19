@@ -1,1 +1,14 @@
-#
+manifestVersion: 1
+
+id: matter-hub
+name: Home Assistant Matter Hub
+tagline: Bridge Home Assistant entities to Matter
+category: Home Automation
+version: "0.0.1"
+port: 8482
+
+description: >
+  Home Assistant Matter Hub bridges Home Assistant entities to Matter.
+
+developer: t0bst4r
+website: https://github.com/t0bst4r/home-assistant-matter-hub
